@@ -3,27 +3,27 @@ import { Router } from '../../deps.ts';
 const router = new Router();
 
 router.get("/", (ctx) => {
-    ctx.response.body = "Get Request";
+    ctx.response.body = "Get RESPONSE";
     // console.log(ctx.response.body);
 });
 
 router.post("/", (ctx) => {
-    ctx.response.body = "Post Request";
+    ctx.response.body = "Post RESPONSE";
     // console.log(ctx.response.body);
 });
 
 router.get("/books", (ctx) => {
-    ctx.response.body = "Get Request to /books";
+    ctx.response.body = "Get RESPONSE to /books";
     // console.log(ctx.response.body);
 });
 
 router.patch("/books/:id", (ctx) => {
-    ctx.response.body = `Patch Request to /books/${ctx.params.id}`;
+    ctx.response.body = `Patch RESPONSE to /books/${ctx.params.id}`;
     // console.log(ctx.response.body);
 });
 
 router.delete("/books/:id", (ctx) => {
-    ctx.response.body = `Delete Request to /books/${ctx.params.id}`;
+    ctx.response.body = `Delete RESPONSE to /books/${ctx.params.id}`;
     // console.log(ctx.response.body);
 });
 
