@@ -7,8 +7,9 @@ router.get("/", (ctx) => {
     // console.log(ctx.response.body);
 });
 
-router.post("/", (ctx) => {
-    ctx.response.body = "Post RESPONSE";
+router.post("/", async (ctx) => {
+    const resp =  await ctx.request.body().value
+    ctx.response.body = "Post RESPONSE: " + JSON.stringify(resp);
     // console.log(ctx.response.body);
 });
 
