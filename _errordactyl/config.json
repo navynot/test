@@ -1,1 +1,1 @@
-{"serverPath":"./server/server.ts","routesPath":"./server/routes","filePaths":["./server/routes/router.ts"],"endpoints":{"GET":[{"path":"/"},{"path":"/books"}],"POST":[{"path":"/","body":{"name" : "tony"}}],"PUT":[],"DELETE":[{"path":"/books/:id"}],"PATCH":[{"path":"/books/:id","body":{}}]}}
+{"serverPath":"./server/server.ts","routesPath":"./server/routes","filePaths":["./server/routes/router.ts"],"endpoints":{"GET":[{"path":"/"},{"path":"/:_id"}],"POST":[{"path":"/create","body":{}}],"PUT":[],"DELETE":[{"path":"/:_id"}],"PATCH":[{"path":"/:_id","body":{}}]}}
