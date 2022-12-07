@@ -4,6 +4,7 @@ const router = new Router();
 
 router.get("/", (ctx) => {
     ctx.response.body = "Get RESPONSE";
+    // consoe.log('hello')
     // console.log(ctx.response.body);
 });
 
